@@ -22,6 +22,22 @@
     "description": "I am a <accent>Developer</accent> with a passion for technology and a clear focus on creating solutions that make a real impact.<br/><br/>I have worked on national and international projects using tools such as <strong>Java</strong>, <strong>Python</strong>, <strong>React</strong>, and <strong>Docker</strong>.<br/><br/>Today I combine development with <strong>Data Science</strong> and <strong>Machine Learning</strong>, building systems that not only work but also learn and evolve. I am defined by clear communication, leadership, and a strategic vision that goes beyond code."
   },
   "experience": {
+    "cse110_cse111": {
+      "company": "CSE110 & CSE111 - Python projects",
+      "type": "Study project",
+      "description": "I designed several Python programs as part of the study project; the details can be found in the repository's README.",
+      "date": "Jan 2026 - Apr 2026",
+      "labels": [
+        "Python"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/MoroniAg/byu_certificates/tree/main/1_certificate",
+          "icon": "https://simpleicons.org/icons/github.svg",
+          "tooltip": "Repository"
+        }
+      ]
+    },
     "wdd130_rafting": {
       "company": "WDD130 - Rafting Web Page",
       "type": "Study project",

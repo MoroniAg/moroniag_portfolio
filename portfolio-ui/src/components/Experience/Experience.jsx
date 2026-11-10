@@ -13,6 +13,10 @@ export default function Experience() {
       />
       <CardExperience
         mode="project"
+        data={t("experience.cse110_cse111", { returnObjects: true })}
+      />
+      <CardExperience
+        mode="project"
         data={t("experience.portfoliov2", { returnObjects: true })}
       />
       <CardExperience

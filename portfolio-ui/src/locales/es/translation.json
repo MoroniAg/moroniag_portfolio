@@ -22,6 +22,23 @@
     "description": "Soy un <accent>Desarrollador</accent> con pasión por la tecnología y un enfoque claro en crear soluciones que generen un impacto real.<br/><br/>He trabajado en proyectos nacionales e internacionales usando herramientas como <strong>Java</strong>, <strong>Python</strong>, <strong>React</strong> y <strong>Docker</strong>.<br/><br/>Hoy combino el desarrollo con <strong>Data Science</strong> y <strong>Machine Learning</strong>, construyendo sistemas que no solo funcionan sino que también aprenden y evolucionan. Me defino por la comunicación clara, el liderazgo y una visión estratégica que va más allá del código."
   },
   "experience": {
+    
+    "cse110_cse111": {
+      "company": "CSE110 & CSE111 - Python projects",
+      "type": "Proyecto de estudio",
+      "description": "Diseñé varios programas en Python como parte del proyecto de estudio los detalles estan en el README del respositorio.",
+      "date": "Ene 2026 - Abr 2026",
+      "labels": [
+        "Python"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/MoroniAg/byu_certificates/tree/main/1_certificate",
+          "icon": "https://simpleicons.org/icons/github.svg",
+          "tooltip": "Repositorio"
+        }
+      ]
+    },
     "wdd130_rafting": {
       "company": "WDD130 - Rafting Web Page",
       "type": "Proyecto de estudio",
