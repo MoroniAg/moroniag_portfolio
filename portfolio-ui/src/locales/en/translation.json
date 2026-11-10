@@ -22,6 +22,29 @@
     "description": "I am a <accent>Developer</accent> with a passion for technology and a clear focus on creating solutions that make a real impact.<br/><br/>I have worked on national and international projects using tools such as <strong>Java</strong>, <strong>Python</strong>, <strong>React</strong>, and <strong>Docker</strong>.<br/><br/>Today I combine development with <strong>Data Science</strong> and <strong>Machine Learning</strong>, building systems that not only work but also learn and evolve. I am defined by clear communication, leadership, and a strategic vision that goes beyond code."
   },
   "experience": {
+    "wdd131_quicknutri": {
+      "company": "WDD131 - QuickNutri",
+      "type": "Study project",
+      "description": "I designed and developed QuickNutri, a responsive recipe website that allows users to explore nutritious meals through a clean and modern interface. The project involved creating structured layouts, implementing responsive design principles, organizing content effectively, and enhancing usability across different devices. Through this project, I strengthened my skills in front-end development, UI design, and website optimization.",
+      "date": "May 2026 - Jun 2026",
+      "labels": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/MoroniAg/wdd131",
+          "icon": "https://simpleicons.org/icons/github.svg",
+          "tooltip": "Repository"
+        },
+        {
+          "url": "https://moroniag.github.io/wdd131/project/index.html",
+          "icon": "https://simpleicons.org/icons/mailtrap.svg",
+          "tooltip": "Demo"
+        }
+      ]
+    },
     "cse110_cse111": {
       "company": "CSE110 & CSE111 - Python projects",
       "type": "Study project",
