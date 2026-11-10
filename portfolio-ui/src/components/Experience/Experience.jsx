@@ -9,6 +9,10 @@ export default function Experience() {
     <div className="flex flex-col justify-center items-center gap-4 mt-16 mb-8 w-full h-full">
       <CardExperience
         mode="project"
+        data={t("experience.wdd130_rafting", { returnObjects: true })}
+      />
+      <CardExperience
+        mode="project"
         data={t("experience.portfoliov2", { returnObjects: true })}
       />
       <CardExperience

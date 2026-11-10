@@ -10,7 +10,7 @@ RUN npm ci --legacy-peer-deps || npm install
 COPY . .
 RUN npm run build
 
-FROM nginx:alpine
+FROM nginx:alpine-slim
 
 COPY --from=builder /app/dist /usr/share/nginx/html
 

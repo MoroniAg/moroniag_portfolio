@@ -22,6 +22,28 @@
     "description": "I am a <accent>Developer</accent> with a passion for technology and a clear focus on creating solutions that make a real impact.<br/><br/>I have worked on national and international projects using tools such as <strong>Java</strong>, <strong>Python</strong>, <strong>React</strong>, and <strong>Docker</strong>.<br/><br/>Today I combine development with <strong>Data Science</strong> and <strong>Machine Learning</strong>, building systems that not only work but also learn and evolve. I am defined by clear communication, leadership, and a strategic vision that goes beyond code."
   },
   "experience": {
+    "wdd130_rafting": {
+      "company": "WDD130 - Rafting Web Page",
+      "type": "Study project",
+      "description": "I designed and developed a website for a rafting company to showcase my skills in HTML, CSS, and web design. The project involved creating responsive layouts, organizing content effectively, and building an engaging user experience. Throughout the process, I placed a strong emphasis on maintaining clean code, visual consistency, and accessibility, bringing a realistic business website concept to life.",
+      "date": "Mar 2026 - Apr 2026",
+      "labels": [
+        "HTML",
+        "CSS"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/MoroniAg/wdd130",
+          "icon": "https://simpleicons.org/icons/github.svg",
+          "tooltip": "Repository"
+        },
+        {
+          "url": "https://moroniag.github.io/wdd130/wwr/index.html",
+          "icon": "https://simpleicons.org/icons/mailtrap.svg",
+          "tooltip": "Demo"
+        }
+      ]
+    },
     "portfoliov2": {
       "company": "My Portfolio v2",
       "type": "Personal Project",
@@ -77,7 +99,8 @@
         "React",
         "Java",
         "Docker",
-        "GitHub"
+        "GitHub",
+        "Go"
       ],
       "links": [
         {
@@ -109,7 +132,7 @@
       "place": "Ecuador/Peru",
       "position": "Software Developer/Tech Lead",
       "description": "I specialize in developing and implementing features for a Master Data Management (MDM) solution. My work focuses on ensuring data integrity, accuracy and consistency across multiple systems.",
-      "date": "Jun 2023 - Jan 2026",
+      "date": "Jun 2023 - Jul 2026",
       "labels": [
         "Java",
         "XML",
@@ -122,7 +145,7 @@
       "place": "Ecuador",
       "position": "Developer/Tech Lead",
       "description": "As a tech lead, I lead planning, execution and tracking of multiple projects through all phases. Working closely with a highly skilled team, we focus on development, implementation and continuous improvement of our initiatives. Our goal is to deliver high-quality solutions that meet business objectives.",
-      "date": "Jan 2023 - Present",
+      "date": "Jan 2023 - Ago 2026",
       "labels": [
         "Java",
         "React",
