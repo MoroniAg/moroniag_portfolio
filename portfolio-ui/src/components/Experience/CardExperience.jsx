@@ -123,7 +123,7 @@ export default function CardExperience({
                   <span>{data.description}</span>
                 </div>
                 <div className="flex flex-row gap-2 justify-between">
-                  <div className="flex flex-row gap-2 items-center">
+                  <div className="flex flex-wrap flex-row gap-2 items-center ">
                     {data.labels.map((label, index) => (
                       <span
                         key={index}

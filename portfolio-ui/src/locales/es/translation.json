@@ -22,64 +22,25 @@
     "description": "Soy un <accent>Desarrollador</accent> con pasión por la tecnología y un enfoque claro en crear soluciones que generen un impacto real.<br/><br/>He trabajado en proyectos nacionales e internacionales usando herramientas como <strong>Java</strong>, <strong>Python</strong>, <strong>React</strong> y <strong>Docker</strong>.<br/><br/>Hoy combino el desarrollo con <strong>Data Science</strong> y <strong>Machine Learning</strong>, construyendo sistemas que no solo funcionan sino que también aprenden y evolucionan. Me defino por la comunicación clara, el liderazgo y una visión estratégica que va más allá del código."
   },
   "experience": {
-    "wdd131_quicknutri": {
-      "company": "WDD131 - QuickNutri",
+    
+    "byu_projects": {
+      "company": "BYU - Study Projects",
       "type": "Proyecto de estudio",
-      "description": "Diseñé y desarrollé QuickNutri, un sitio web de recetas con diseño adaptable que permite a los usuarios explorar comidas nutritivas a través de una interfaz limpia y moderna. El proyecto conllevó la creación de estructuras organizadas, la implementación de principios de diseño adaptable, la gestión eficaz del contenido y la mejora de la usabilidad en diversos dispositivos. Gracias a este proyecto, fortalecí mis competencias en desarrollo front-end, diseño de interfaz (UI) y optimización de sitios web.",
-      "date": "May 2026 - Jun 2026",
+      "description": "He diseñado y construido algunos proyectos de estudio, los detalles estan en el README.md en el link del repositorio. He usado varias tecnologias como: HTML, CSS, Javascript, Python, C#. adicional he usado estandares de programacion y calidad para mantener un codigo adecuado y mantenible",
+      "date": "Ene 2026 - Actual",
       "labels": [
         "HTML",
         "CSS",
-        "Javascript"
+        "Javascript",
+        "Python",
+        "Node.js",
+        "C#"
       ],
       "links": [
         {
-          "url": "https://github.com/MoroniAg/wdd131",
+          "url": "https://github.com/MoroniAg/study_projects",
           "icon": "https://simpleicons.org/icons/github.svg",
           "tooltip": "Repositorio"
-        },
-        {
-          "url": "https://moroniag.github.io/wdd131/project/index.html",
-          "icon": "https://simpleicons.org/icons/mailtrap.svg",
-          "tooltip": "Demo"
-        }
-      ]
-    },
-    "cse110_cse111": {
-      "company": "CSE110 & CSE111 - Python projects",
-      "type": "Proyecto de estudio",
-      "description": "Diseñé varios programas en Python como parte del proyecto de estudio los detalles estan en el README del respositorio.",
-      "date": "Ene 2026 - Abr 2026",
-      "labels": [
-        "Python"
-      ],
-      "links": [
-        {
-          "url": "https://github.com/MoroniAg/byu_certificates/tree/main/1_certificate",
-          "icon": "https://simpleicons.org/icons/github.svg",
-          "tooltip": "Repositorio"
-        }
-      ]
-    },
-    "wdd130_rafting": {
-      "company": "WDD130 - Rafting Web Page",
-      "type": "Proyecto de estudio",
-      "description": "Diseñé y desarrollé el sitio web de una empresa de rafting para demostrar mis habilidades en HTML, CSS y diseño web. El proyecto consistió en crear diseños adaptables (responsive), organizar el contenido de manera eficaz y construir una experiencia de usuario atractiva. A lo largo del proceso, puse especial énfasis en mantener un código limpio, una coherencia visual y la accesibilidad, dando vida a un concepto realista de sitio web empresarial.",
-      "date": "Mar 2026 - Abr 2026",
-      "labels": [
-        "HTML",
-        "CSS"
-      ],
-      "links": [
-        {
-          "url": "https://github.com/MoroniAg/wdd130",
-          "icon": "https://simpleicons.org/icons/github.svg",
-          "tooltip": "Repositorio"
-        },
-        {
-          "url": "https://moroniag.github.io/wdd130/wwr/index.html",
-          "icon": "https://simpleicons.org/icons/mailtrap.svg",
-          "tooltip": "Demo"
         }
       ]
     },
