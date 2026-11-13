@@ -41,40 +41,40 @@ echo "Building Docker image portfolio-ui:$tag..."
 # build versionado
 docker build -t portfolio-ui:$tag .
 
-# tag para registry
-docker tag portfolio-ui:$tag $host/portfolio-ui:$tag
-docker tag portfolio-ui:$tag $host/portfolio-ui:latest
+# # tag para registry
+# docker tag portfolio-ui:$tag $host/portfolio-ui:$tag
+# docker tag portfolio-ui:$tag $host/portfolio-ui:latest
 
-# save images to tar.gz instead of pushing
-outfile_tag="portfolio-ui_${tag}.tar.gz"
-outfile_latest="portfolio-ui_latest.tar.gz"
+# # save images to tar.gz instead of pushing
+# outfile_tag="portfolio-ui_${tag}.tar.gz"
+# outfile_latest="portfolio-ui_latest.tar.gz"
 
-echo "Saving image $host/portfolio-ui:$tag to $outfile_tag..."
-docker save $host/portfolio-ui:$tag | gzip -c > "$outfile_tag"
+# echo "Saving image $host/portfolio-ui:$tag to $outfile_tag..."
+# docker save $host/portfolio-ui:$tag | gzip -c > "$outfile_tag"
 
-echo "Saving image $host/portfolio-ui:latest to $outfile_latest..."
-docker save $host/portfolio-ui:latest | gzip -c > "$outfile_latest"
+# echo "Saving image $host/portfolio-ui:latest to $outfile_latest..."
+# docker save $host/portfolio-ui:latest | gzip -c > "$outfile_latest"
 
-echo "Build complete. This script only builds the image. Run the container separately with docker run or docker compose."
+# echo "Build complete. This script only builds the image. Run the container separately with docker run or docker compose."
 
-# copy artifacts to host:~/portfolio_dev
-echo "Copying artifacts to $host:~/${REMOTE_DIR}..."
-scp -C "$outfile_tag" "$host":~/${REMOTE_DIR}/
-scp -C "$outfile_latest" "$host":~/${REMOTE_DIR}/
+# # copy artifacts to host:~/portfolio_dev
+# echo "Copying artifacts to $host:~/${REMOTE_DIR}..."
+# scp -C "$outfile_tag" "$host":~/${REMOTE_DIR}/
+# scp -C "$outfile_latest" "$host":~/${REMOTE_DIR}/
 
-ssh -v $host "cd ~/${REMOTE_DIR} && \
-docker-compose -f ${COMPOSE_FILE} down && \
-docker load -i ${outfile_latest} && \
-docker-compose -f ${COMPOSE_FILE} up -d && \
-exit"
+# ssh -v $host "cd ~/${REMOTE_DIR} && \
+# docker-compose -f ${COMPOSE_FILE} down && \
+# docker load -i ${outfile_latest} && \
+# docker-compose -f ${COMPOSE_FILE} up -d && \
+# exit"
 
-  # delete .env
-  # rm .env
-  rm "$outfile_tag" "$outfile_latest"
-  cp vite.config_backup.js vite.config.js 
-  rm vite.config_backup.js 
+#   # delete .env
+#   # rm .env
+#   rm "$outfile_tag" "$outfile_latest"
+#   cp vite.config_backup.js vite.config.js 
+#   rm vite.config_backup.js 
 
-  if [ "$PROD" = true ]; then
-    cp .env.backup .env
-    rm .env.backup
-  fi
+#   if [ "$PROD" = true ]; then
+#     cp .env.backup .env
+#     rm .env.backup
+#   fi

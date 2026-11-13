@@ -8,6 +8,10 @@ export default function Experience() {
   return (
     <div className="flex flex-col justify-center items-center gap-4 mt-16 mb-8 w-full h-full">
       <CardExperience
+        mode="work"
+        data={t("experience.saiq", { returnObjects: true })}
+      />
+      <CardExperience
         mode="project"
         data={t("experience.byu_projects", { returnObjects: true })}
       />

@@ -39,78 +39,78 @@ export default function Template() {
 
   return (
     <>
-      
-      <div className="relative z-10 flex flex-col min-h-screen text-base">
-      <header className="flex-none h-17.5 bg-brand-dark text-on-brand-dark flex items-center header-bottom-accent">
-        <div className="w-full max-w-5xl mx-auto px-4">
-          <nav className="relative flex items-center justify-between py-3">
-            <div className="logo">
-              <NavLink to="/" aria-label="Home">
-                <img src={logo} alt="Logo" className="h-10 w-auto" />
-              </NavLink>
-            </div>
-            <Navbar className="hidden lg:flex gap-6 items-center text-sm" />
-            <div className="flex items-center gap-3">
-              <button
-                type="button"
-                className="lg:hidden p-2 rounded bg-transparent border border-white/10 text-white hover:bg-white/5"
-                onClick={toggleMobile}
-                aria-expanded={mobileOpen}
-                aria-label={mobileOpen ? "Close menu" : "Open menu"}
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden
-                >
-                  <path
-                    d="M4 6h16M4 12h16M4 18h16"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
-              <button
-                type="button"
-                aria-label={translation("lang.change", { lang })}
-                onClick={toggleLang}
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
-                className={`bg-transparent border border-white/20 px-3 py-1 rounded text-sm hover:bg-white/10 transition-colors duration-150 ${hovered ? "text-accent-red" : "text-white"}`}
-              >
-                {lang}
-              </button>
-            </div>
-            {mobileOpen && (
-              <div className="lg:hidden absolute left-0 top-full w-full bg-(--brand-darker) text-white shadow-md z-40">
-                <Navbar
-                  vertical={true}
-                  onLinkClick={() => setMobileOpen(false)}
-                  className="flex flex-col gap-2 p-4 text-sm"
-                />
-              </div>
-            )}
-          </nav>
-        </div>
-      </header>
 
-      <main className="flex-1 overflow-auto bg-brand-dark text-white main-tech-bg">
-        <div className="w-full max-w-5xl mx-auto px-4 ">
-          <Outlet />
-        </div>
-      </main>
+      <div className="relative z-10 flex flex-col min-h-screen text-base">
+        <header className="flex-none h-17.5 bg-brand-dark text-on-brand-dark flex items-center header-bottom-accent">
+          <div className="w-full max-w-5xl mx-auto px-4">
+            <nav className="relative flex items-center justify-between py-3">
+              <div className="logo">
+                <NavLink to="/" aria-label="Home">
+                  <img src={logo} alt="Logo" className="h-10 w-auto" />
+                </NavLink>
+              </div>
+              <Navbar className="hidden lg:flex gap-6 items-center text-sm" />
+              <div className="flex items-center gap-3">
+                <button
+                  type="button"
+                  className="lg:hidden p-2 rounded bg-transparent border border-white/10 text-white hover:bg-white/5"
+                  onClick={toggleMobile}
+                  aria-expanded={mobileOpen}
+                  aria-label={mobileOpen ? "Close menu" : "Open menu"}
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden
+                  >
+                    <path
+                      d="M4 6h16M4 12h16M4 18h16"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  aria-label={translation("lang.change", { lang })}
+                  onClick={toggleLang}
+                  onMouseEnter={() => setHovered(true)}
+                  onMouseLeave={() => setHovered(false)}
+                  className={`bg-transparent border border-white/20 px-3 py-1 rounded text-sm hover:bg-white/10 transition-colors duration-150 ${hovered ? "text-accent-red" : "text-white"}`}
+                >
+                  {lang}
+                </button>
+              </div>
+              {mobileOpen && (
+                <div className="lg:hidden absolute left-0 top-full w-full bg-(--brand-darker) text-white shadow-md z-40">
+                  <Navbar
+                    vertical={true}
+                    onLinkClick={() => setMobileOpen(false)}
+                    className="flex flex-col gap-2 p-4 text-sm"
+                  />
+                </div>
+              )}
+            </nav>
+          </div>
+        </header>
+
+        <main className="flex-1 overflow-auto bg-brand-dark text-white main-tech-bg">
+          <div className="w-full max-w-5xl mx-auto px-4 ">
+            <Outlet />
+          </div>
+        </main>
 
         <footer className="flex-none bg-footer text-white flex items-center py-3 sm:py-4">
-        <div className="w-full max-w-5xl mx-auto px-4 text-center text-[0.75rem]">
-        <span>  {translation("footer.credit")}</span>
-        &nbsp; - &nbsp;<span className="font-bold">v2.0.1</span>
-        </div>
-      </footer>
+          <div className="w-full max-w-5xl mx-auto px-4 text-center text-[0.75rem]">
+            <span>  {translation("footer.credit")}</span>
+            &nbsp; - &nbsp;<span className="font-bold">v2.0.1</span>
+          </div>
+        </footer>
       </div>
     </>
   );
